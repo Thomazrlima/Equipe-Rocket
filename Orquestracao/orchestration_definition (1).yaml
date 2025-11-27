@@ -1,0 +1,34 @@
+resources:
+  jobs:
+    Equipe_Rocket:
+      name: Equipe-Rocket
+      schedule:
+        quartz_cron_expression: 37 0 13 * * ?
+        timezone_id: America/Sao_Paulo
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: extracao_bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/thomazlima211@gmail.com/Equipe-Rocket/Notebooks/land_to_bronze
+            source: WORKSPACE
+        - task_key: conversao_silver
+          depends_on:
+            - task_key: extracao_bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/thomazlima211@gmail.com/Equipe-Rocket/Notebooks/bronze_to_silver
+            source: WORKSPACE
+          environment_key: Default
+        - task_key: transformacao_gold
+          depends_on:
+            - task_key: conversao_silver
+          notebook_task:
+            notebook_path: /Workspace/Users/thomazlima211@gmail.com/Equipe-Rocket/Notebooks/silver_to_gold
+            source: WORKSPACE
+          environment_key: Default
+      queue:
+        enabled: true
+      environments:
+        - environment_key: Default
+          spec:
+            environment_version: "4"
+      performance_target: PERFORMANCE_OPTIMIZED
