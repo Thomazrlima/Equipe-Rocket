@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img width="1913" height="400" alt="Banner Rocket Lab" src="https://via.placeholder.com/1913x400/2E86AB/FFFFFF?text=Equipe+Rocket+-+V-Credit+Transformation" />
+  <img width="1913" height="400" alt="Banner Rocket Lab" src="./img/logo.png" />
 </p>
 
 <p align="center">
@@ -19,7 +19,8 @@
   <a href="#-entregas-técnicas">Entregas Técnicas</a> •
   <a href="#-análises-e-insights">Análises</a> •
   <a href="#-equipe">Equipe</a> •
-  <a href="#-próximos-passos">Próximos Passos</a>
+  <a href="https://github.com/Thomazrlima/Equipe-Rocket/blob/main/Orquestracao/orchestration_definition.yaml">Orquestração</a> •
+  <a href="https://lookerstudio.google.com/s/h8ukqqgwH9k">Relatório</a>
 </p>
 
 ---
