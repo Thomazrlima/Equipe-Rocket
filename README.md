@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img width="1913" height="400" alt="Banner Rocket Lab" src="./img/logo.png" />
+  <img width="1913" height="400" alt="Banner Rocket Lab" src="./img/banner.png" />
 </p>
 
 <p align="center">
