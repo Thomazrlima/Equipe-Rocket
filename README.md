@@ -16,9 +16,8 @@
   <a href="#-sobre-o-case">Sobre o Case</a> •
   <a href="#-abordagem-da-equipe-rocket">Abordagem</a> •
   <a href="#-arquitetura-de-dados">Arquitetura</a> •
-  <a href="#-entregas-técnicas">Entregas Técnicas</a> •
   <a href="#-análises-e-insights">Análises</a> •
-  <a href="#-equipe">Equipe</a> •
+  <a href="#-equipe-rocket">Equipe Rocket</a> •
   <a href="https://github.com/Thomazrlima/Equipe-Rocket/blob/main/Orquestracao/orchestration_definition.yaml">Orquestração</a> •
   <a href="https://lookerstudio.google.com/s/h8ukqqgwH9k">Relatório</a>
 </p>
@@ -65,7 +64,7 @@ graph TB
     A[Fontes de Dados<br>V-Credit] --> B[Camada Bronze<br>Dados Brutos]
     B --> C[Camada Silver<br>Dados Tratados]
     C --> D[Camada Gold<br>Dados Enriquecidos]
-    D --> E[Power BI<br>Visualização]
+    D --> E[Looker Studio<br>Visualização]
     D --> F[Análises<br>Insights]
     
     G[Databricks Jobs] --> B
@@ -86,7 +85,6 @@ graph TB
 
 ### **🥇 Camada Gold**
 - Agregações estratégicas de negócio
-- KPIs de atendimento consolidados
 - Visões analíticas para tomada de decisão
 - Métricas de eficiência operacional
 
@@ -95,10 +93,9 @@ graph TB
 ## ⚙️ **Entregas Técnicas**
 
 ### **📓 Notebooks Databricks**
-- `01_bronze_ingestion`: Ingestão das bases originais
-- `02_silver_processing`: Tratamento e limpeza
-- `03_gold_aggregation`: Modelagem dimensional
-- `04_kpi_calculation`: Cálculo de métricas estratégicas
+- `land_to_bronze`: Ingestão das bases originais
+- `broze_to_silver`: Tratamento e limpeza
+- `silver_to_gold`: Modelagem dimensional e Cálculo de métricas estratégicas
 
 ### **🔁 Pipelines Automatizados**
 - Jobs configurados para atualização recorrente
@@ -128,7 +125,6 @@ Nossas análises respondem perguntas críticas do negócio:
 - **Onde investir** para maior retorno em experiência do cliente?
 
 ### **🔍 Insights Principais**
-*(A serem desenvolvidos com base nos dados)*
 - Padrões de sazonalidade no volume de atendimentos
 - Correlação entre tempo de espera e satisfação
 - Eficácia comparativa entre URA e Chatbot
@@ -145,7 +141,7 @@ Nossas análises respondem perguntas críticas do negócio:
 | <img src="https://github.com/Thomazrlima.png" width="80" style="border-radius:50%"> | **Thomaz Lima**<br>[📧](mailto:trl@cesar.school) | Modelagem Analítica | Engenharia de Dados, Arquitetura |
 | <img src="https://github.com/doubojv.png" width="80" style="border-radius:50%"> | **João Vitor Coutinho**<br>[📧](mailto:joaovitorx123@gmail.com) | Processamento de Dados | ETL, Qualidade de Dados |
 | <img src="https://github.com/Giovanny29.png" width="80" style="border-radius:50%"> | **Giovanny Lira**<br>[📧](mailto:giovannyaraujo29@gmail.com) | Modelagem Analítica | KPIs, Agregações |
-| <img src="https://github.com/GuilhermeOCCampelo.png" width="80" style="border-radius:50%"> | **Guilherme Campelo**<br>[📧](mailto:gocc@cin.ufpe.br) | Processamento de Dado | Databricks Jobs, CI/CD |
+| <img src="https://github.com/GuilhermeOCCampelo.png" width="80" style="border-radius:50%"> | **Guilherme Campelo**<br>[📧](mailto:gocc@cin.ufpe.br) | Processamento de Dados | Databricks Jobs, CI/CD |
 | <img src="https://github.com/PedrocsGalindo.png" width="80" style="border-radius:50%"> | **Pedro Cesar Galindo**<br>[📧](mailto:pedrocsgalindo@gmail.com) | Visualização e Storytelling | Power BI, Apresentação |
 
 </div>
